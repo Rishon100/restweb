@@ -1,5 +1,5 @@
 # Ex.07 Restaurant Website
-## Date:
+## Date:12/12/2024
 
 ## AIM:
 To develop a static Restaurant website to display the food items and services provided by them.
@@ -29,7 +29,7 @@ Publish the website in the given URL.
 
 ## PROGRAM:
 ```
-home.html
+index.html
 
 <html>
 <head>
@@ -44,65 +44,189 @@ home.html
         <nav>
             <ul>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    
+    
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Welcome to neon restaurant, where we serve the finest dishes made from the freshest ingredients. Our chefs are dedicated to providing you with an unforgettable dining experience.</p>
+        <p>Welcome to Neon Restaurant, where we serve the finest dishes made from the freshest ingredients. Our chefs are dedicated to providing you with an unforgettable dining experience.</p>
     </section>
+    <div class="image-row">
+        <img src="pic1.png" alt="Image 1" width="420" height="250">
+        <img src="pic 3.png" alt="Image 2" width="420" height="250">
+        <img src="pic2.png" alt="Image 3" width="420" height="250">
+    </div>
+    
 
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-container">
-            <div class="menu-left">
-                <ul>
-                    <li>
-                        <img src="sandwich.png" width="300">
-                        <b>chicken Sandwich - 149 Rs</b>
-                    </li>
-                    <li>
-                        <img src="soup.png" width="300">
-                        <b>Tomato Soup - 99 Rs</b>
-                    </li>
-                    <li>
-                        <img src="sushi.png" width="300">
-                        <b>Sushi - 399 Rs</b>
-                        </li> 
-                    </li>
-                </ul>
+</body>
+</html>
+
+menu.html
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="sandwich.png" alt="Chicken Sandwich" width="150">
+                <p>Chicken Sandwich - 149 Rs</p>
             </div>
-            <div class="menu-right">
-                <ul>
-                    <li>
-                        <img src="burger.png"  width="400" height="240">
-                        <b>cheese burger- 299 Rs</b>
-                    </li>
-                    <li>
-                        <img src="pizza.png"  width="400">
-                       <b> Pizza - 499 Rs</b>
-                    </li>
-                    <li>
-                        <img src="fries.png"  width="400">
-                         <b>French Fries - 199 Rs</b>
-                    </li>
-                </ul>
+            <div class="menu-item">
+                <img src="soup.png" alt="Tomato Soup" width="150">
+                <p>Tomato Soup - 99 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="sushi.png" alt="Sushi" width="150">
+                <p>Sushi - 399 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="burger.png" alt="Cheese Burger" width="150">
+                <p>Cheese Burger - 299 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="pizza.png" alt="Pizza" width="150">
+                <p>Pizza - 499 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="fries.png" alt="French Fries" width="150">
+                <p>French Fries - 199 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="salad.png" alt="Salad" width="150">
+                <p>Fresh Salad - 129 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="steak.png" alt="Steak" width="150">
+                <p>Grilled Steak - 599 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="pasta.png" alt="Pasta" width="150">
+                <p>Italian Pasta - 299 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="desert.png" alt="Dessert" width="150">
+                <p>Chocolate Dessert - 199 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="icecream.png" alt="Ice Cream" width="150">
+                <p>Ice Cream - 99 Rs</p>
+            </div>
+            <div class="menu-item">
+                <img src="coffee.png" alt="Coffee" width="150">
+                <p>Hot Coffee - 49 Rs</p>
+            </div>
+        </div>        
+    </section>
+</body>
+</html>
+
+team.html
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meet Our Team</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="team">
+            <div class="team-member">
+                <img src="myphoto.jpeg" alt="Owner" class="team-img">
+                <p><b>V Rishon Anand</b></p>
+                <p>1 Year of Experience</p>
+            </div>
+            <div class="team-member">
+                <img src="arnold.png" alt="Chef Arnold" class="team-img">
+                <p><b>Arnold</b></p>
+                <p>Head Chef - Expert in Italian Cuisine</p>
+            </div>
+            <div class="team-member">
+                <img src="chef.png" alt="Chef Johnson" class="team-img">
+                <p><b>Dwayne Johnson</b></p>
+                <p>Pastry Chef - Creating Delicious Desserts</p>
+            </div>
+            <div class="team-member">
+                <img src="vad.png" alt="Waiter Vadivelu" class="team-img">
+                <p><b>Vadivelu</b></p>
+                <p>Friendly Waiter - Ensuring the Best Service</p>
+            </div>
+            <div class="team-member">
+                <img src="robert.png" alt="Waiter Vadivelu" class="team-img">
+                <p><b>Tony Stark</b></p>
+                <p>Waiter - Dedicated to Customer Satisfaction</p>
+            </div>
+            <div class="team-member">
+                <img src="hitler.png" alt="Waiter Vadivelu" class="team-img">
+                <p><b>Adolf Hitler</b></p>
+                <p>Grill Chef - Master of Barbecue</p>
             </div>
         </div>
     </section>
+</body>
+</html>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
+contact.html
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
         <p>Email: neonrestaurant@gmail.com</p>
         <p>Phone: (123) 456-7890</p>
-        <p>Address: 12345, chennai </p>
+        <p>Address: 12345, Saveetha Engineering College, Chennai</p>
     </section>
-
     <footer>
-        <p>&copy; 2024 Neon Restaurant. All rights reserved.</p>
+        <p>By V Rishon Anand (24900460)</p>
+        <p>2024 Neon Restaurant. All rights reserved.</p>
     </footer>
 </body>
 </html>
@@ -113,15 +237,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.9;
     font-size: large;
     background-image: url('purple.png');
     background-size: cover; 
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat; 
-    padding: 20px;
-    color: white;
+    height: 100vh;
+    color: rgb(248, 246, 246);
 }
+
 
 header {
     background: #ff6347; 
@@ -143,58 +268,102 @@ nav ul li a {
     color: rgb(15, 14, 14);
     text-decoration: none;
     font-weight: bold;
+    font-size: larger;
 }
 
 section {
     padding: 20px;
-    margin: 10px;
+    margin: 30px;
 }
 
-h2 {
-    color: #f552e2; 
-}
+
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #88bc19;
     color: rgb(240, 240, 230);
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    
+
+    
 }
-.menu-container {
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover; 
+    border: 2px solid #fff; 
+    border-radius: 5px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.menu-item p {
+    margin-top: 10px; 
+    font-size: 17px; 
+    color: #c7ecde; 
+    font-weight: 800;
+}
+
+.team {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 75x; 
+    margin: 10px auto;
+    max-width: 1200px; 
 }
 
-.menu-left, .menu-right {
-    width: 48%; 
+.team-member {
+    text-align:center;
+    width: 200px; 
 }
 
-.menu-left ul, .menu-right ul {
-    list-style: none;
-    padding: 0;
-    font-size: large;
+.team-img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.menu-left li, .menu-right li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.team-member p {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #fcf3f3;
+}
+.image-row {
+    display: flex; 
+    justify-content: center; 
+    gap: 25px;
+    margin: 20px 0; 
 }
 
-.menu-left li img, .menu-right li img {
-    margin-right: 10px;
-    border-radius: 45px;
+.image-row img {
+    border: 6px solid #0a0a0a; 
+    border-radius: 20px; 
 }
+
 
 ```
 
 
 ## OUTPUT:
-![alt text](<Screenshot 2024-12-12 200338.png>)
-![alt text](<Screenshot 2024-12-12 200445.png>)
-![alt text](<Screenshot 2024-12-12 200406.png>)
+
+![alt text](<Screenshot 2024-12-13 190358.png>)
+![alt text](<Screenshot 2024-12-13 190409.png>)
+![alt text](<Screenshot 2024-12-13 190434.png>)
+![alt text](<Screenshot 2024-12-13 190458.png>)
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
